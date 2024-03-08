@@ -1,0 +1,45 @@
+@keyframes changeImage {
+    0% {
+        transform: rotateY(-0.5turn);
+        opacity: 1;
+    }
+    50% {
+        transform: rotateY(0.5turn);
+        opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.Card_Image {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 5%;
+}
+
+.card__ {
+    position: relative;
+    color: white;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+
+.card__face {
+    transition: 1s ease-in-out;
+    transform-style: preserve-3d;
+    transform: rotateY(0.5turn);
+    
+}
+
+.card__face img {
+    animation: changeImage 1s ease-in-out;
+    transform: rotateY(0.5turn);
+}
+
